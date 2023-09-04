@@ -1,0 +1,27 @@
+@mixin for-size($size, $width: min) {
+  @if $size == screen-sm {
+    @media (#{$width}-width: $screen-sm) {
+      @content;
+    }
+  } @else if $size == screen-md {
+    @media (#{$width}-width: $screen-md) {
+      @content;
+    }
+  } @else if $size == screen-lg {
+    @media (#{$width}-width: $screen-lg) {
+      @content;
+    }
+  } @else if $size == screen-xl {
+    @media (#{$width}-width: $screen-xl) {
+      @content;
+    }
+  } @else if $size == screen-grid {
+    @media (#{$width}-width: $screen-grid) {
+      @content;
+    }
+  } @else {
+    @media (#{$width}-width: $size) {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+.container {
+  margin: 0 $spacing-grid;
+
+  @include for-size(screen-grid) {
+    max-width: $max-width-grid;
+    margin: 0 auto;
+  }
+}
